@@ -1,0 +1,41 @@
+/* Reusable Design */
+@import "button.css";
+@import "card.css";
+
+/* Section Design */
+@import "navbar.css";
+@import "hero-banner.css";
+@import "service.css";
+@import "contact.css";
+@import "thank-you.css";
+@import "footer.css";
+@import "background.css";
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px; /* You can lower or raise this value to your preference */
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+}

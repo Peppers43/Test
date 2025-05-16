@@ -1,0 +1,81 @@
+#hero-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  padding: 72px 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/About.webp') no-repeat center center;
+  background-size: cover;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 40px 32px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 42px;
+  margin: 0;
+  color: #1f2937;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.hero-content p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #374151;
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+.hero-content .btn-container {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.hero-image img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  #hero-banner {
+    flex-direction: column-reverse;
+    padding: 40px 20px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .hero-image {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+}
